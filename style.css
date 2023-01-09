@@ -27,7 +27,31 @@ html {
     border: none;
     border-radius: 6px;
     background-color: #dfdfdf;
-    box-sizing: 
+}
+
+#lowercase {
+    margin-left: 10px;
+}
+
+#uppercase {
+    margin-left: 10px;
+}
+
+#symbols {
+    margin-left: 10px;
+}
+
+#checkBoxes {
+    margin-bottom: 10px;
+}
+
+#customText {
+    margin-left: 6px;
+    width: 31%;
+    height: 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #dfdfdf;
 }
 
 #generateButton {
@@ -74,7 +98,11 @@ html {
 }
 
 #generateButton:hover {
-    background-color: #2f9b33; /* Green */
+    background-color: #2b912d; /* Green */
+}
+
+#copyButton:hover {
+    background-color: #2b912d;
 }
 
 .material-symbols-outlined:hover {

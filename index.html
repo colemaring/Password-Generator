@@ -6,7 +6,7 @@
     <title>Password Generator</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,1,200" />
-    <link href="styles/style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -23,18 +23,17 @@
      <button class="material-symbols-outlined" onclick="settings()">settings</button>
    </div>
 
-   <div id="settings" style="display: none">
+   <div id="settings" style="display: non">
     <h1>Advanced Settings</h1>
-     <label>Include Numbers</label><br>
-     <label>Include Lowercase</label><br>
-     <label>Include Uppercase</label><br>
-     <label>Include Symbols</label><br>
-     <label>Exclude Similar Characters</label><br>
-     <label>Custom Charcter Set</label><br>
+     <div id="checkBoxes">
+      <span id="numbers">0-9<input type="checkbox" id="numberBox" checked></span>
+      <span id="lowercase">a-z<input type="checkbox" id="lowercaseBox" checked></span>
+      <span id="uppercase">A-Z<input type="checkbox" id="upperCaseBox" checked></span>
+       <span id="symbols">!@#$%&<input type="checkbox" id="symbolsBox"></span>
+     </div>
+     <span id="custom">Custom Character Set<input type="text" id="customText"></span>
    </div>
 
-    <script src="scripts/main.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
-
-
