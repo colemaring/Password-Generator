@@ -1,6 +1,6 @@
-let uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-let lowercase = "abcdefghijklmnopqrstuvwxyz";
-let numbers = "0123456789";
+let uppercase = "ABCDEFGHJKLMNPQRTUVWXYZ";
+let lowercase = "abcdefghijkmnopqrstuvwxyz";
+let numbers = "2346789";
 let symbols = "";
 
 // generates a random password of specified length based upon selected settings
