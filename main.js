@@ -2,8 +2,8 @@ let uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let lowercase = "abcdefghijklmnopqrstuvwxyz";
 let numbers = "0123456789";
 let symbols = "";
-let custom = "";
 
+// generates a random password of specified length based upon selected settings
 function generate() 
 {
     let characters = uppercase + lowercase + numbers + symbols;
@@ -81,6 +81,5 @@ function toggleSymbols(cb)
 function copy()
 {
     let copyText = document.getElementById("output").value;
-    
     navigator.clipboard.writeText(copyText);
 }
