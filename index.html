@@ -18,20 +18,19 @@
       <button id="generateButton" onclick="generate()">Generate</button><br><br>
       <p>Generated Password:</p>
      <input id="output" type="text" name="result" readonly>
-     <button id="copyButton">Copy</button>
+     <button id="copyButton" onclick = "copy()">Copy</button>
      <br><br>
      <button class="material-symbols-outlined" onclick="settings()">settings</button>
    </div>
 
-   <div id="settings" style="display: none">
+   <div id="settings" style="display: non">
     <h1>Advanced Settings</h1>
      <div id="checkBoxes">
-      <span id="numbers">0-9<input type="checkbox" id="numberBox" checked></span>
-      <span id="lowercase">a-z<input type="checkbox" id="lowercaseBox" checked></span>
-      <span id="uppercase">A-Z<input type="checkbox" id="upperCaseBox" checked></span>
-       <span id="symbols">!@#$%&<input type="checkbox" id="symbolsBox"></span>
+      <span id="numbers">0-9<input type="checkbox" id="numberBox" onclick = "toggleNumbers(this)" checked></span>
+      <span id="lowercase">a-z<input type="checkbox" id="lowercaseBox" onclick = "toggleLowercase(this)" checked></span>
+      <span id="uppercase">A-Z<input type="checkbox" id="upperCaseBox" onclick = "toggleUppercase(this)" checked></span>
+       <span id="symbols">!@#$%&<input type="checkbox" id="symbolsBox" onclick = "toggleSymbols(this)"></span>
      </div>
-     <span id="custom">Custom Character Set<input type="text" id="customText"></span>
    </div>
 
     <script src="main.js"></script>
